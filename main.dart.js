@@ -30119,9 +30119,9 @@ for(;;)switch(s){case 0:s=2
 return A.p(A.jb(),$async$ow)
 case 2:q=b
 s=3
-return A.p(q.ih("String","access_token","demo.2"),$async$ow)
+return A.p(q.ih("String","access_token","demo-access-token-modelia.2"),$async$ow)
 case 3:s=4
-return A.p(q.ih("String","refresh_token","demo-refresh.2"),$async$ow)
+return A.p(q.ih("String","refresh_token","demo-refresh-token-modelia.2"),$async$ow)
 case 4:s=5
 return A.p(q.ih("String","usuario_email","demo@example.com"),$async$ow)
 case 5:s=6
@@ -100706,7 +100706,7 @@ m.m(0,"subtotal",A.cF(n.i(0,"precioUnitario"))*A.d6(n.i(0,"cantidad")))
 i.push(m)}return A.a4(["id",a.a,"estado",l,"total",k,"direccionEnvio",a.d,"notas",a.e,"createdAt",j,"items",i],q,p)},
 JP(a){return A.a4(["id",a.a,"nombre",a.b,"email",a.c,"rol",a.e,"direccion",a.f,"createdAt",B.b.ga8(a.w.FN().split(".")),"activo",a.r],t.N,t.z)},
 Wj(a){var s=a.a,r=""+s
-return A.a4(["accessToken","demo."+r,"refreshToken","demo-refresh."+r,"tipo","Bearer","id",s,"nombre",a.b,"email",a.c,"rol",a.e],t.N,t.z)},
+return A.a4(["accessToken","demo-access-token-modelia."+r,"refreshToken","demo-refresh-token-modelia."+r,"tipo","Bearer","id",s,"nombre",a.b,"email",a.c,"rol",a.e],t.N,t.z)},
 ar3(a3,a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d="password",c="nombre",b=a3.a,a=a3.b,a0=a.guI(),a1=A.fo(a0,1,e,A.X(a0).c).ew(0),a2=a.gqY()
 a=new A.ad3(a1)
 s=a1.length!==0&&a1[0]==="admin"
@@ -100714,7 +100714,7 @@ a0=a3.r
 r=a0.i(0,"Authorization")
 q=r==null?a0.i(0,"authorization"):r
 if(q==null)q=""
-p=A.bp("demo\\.(\\d+)$",!0,!1,!1).fj(q)
+p=A.bp("^Bearer .*\\.(\\d+)$",!0,!1,!1).fj(q)
 if(p==null)o=e
 else{a0=p.b[1]
 a0.toString
