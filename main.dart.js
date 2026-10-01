@@ -103056,19 +103056,19 @@ F(a){var s=this.d
 s===$&&A.a()
 return A.aVr(null,B.mS,s)}}
 A.aL5.prototype={
-$1(a){var s,r=v.G,q=r.document.createElement("script")
-q.type="module"
-q.src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
-r.document.head.appendChild(q)
-s=r.document.createElement("model-viewer")
-s.setAttribute("src",this.a.a.c)
-s.setAttribute("auto-rotate","")
-s.setAttribute("camera-controls","")
-s.setAttribute("shadow-intensity","1")
-s.style.width="100%"
-s.style.height="100%"
-s.style.backgroundColor="#1a1a1a"
-return s},
+$1(a){var s,r,q=v.G
+if(q.window.customElements.get("model-viewer")==null){s=q.document.createElement("script")
+s.type="module"
+s.src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+q.document.head.appendChild(s)}r=q.document.createElement("model-viewer")
+r.setAttribute("src",this.a.a.c)
+r.setAttribute("auto-rotate","")
+r.setAttribute("camera-controls","")
+r.setAttribute("shadow-intensity","1")
+r.style.width="100%"
+r.style.height="100%"
+r.style.backgroundColor="#1a1a1a"
+return r},
 $S:265}
 A.tT.prototype={
 a7(){return new A.Kz(A.b([],t.wj))}}
